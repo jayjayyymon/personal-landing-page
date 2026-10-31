@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Justine Ignacio | Full-Stack Web Developer</title>
@@ -15,14 +16,14 @@
       </ul>
     </nav>
 
-    <header>
+    <header id="hero">
       <h1>Justine Ignacio's Portfolio</h1>
       <p>An Aspiring Full-Stack Web Developer</p>
     </header>
 
-    <main>
+    <main class="main">
       <section id="about">
-        <h2>About</h2>
+        <h2 class="header-title">About</h2>
         <p>
           Hi, I'm Justine James Ignacio, an aspiring full-stack developer who
           wants to build fast, responsive websites and web apps for small
@@ -36,21 +37,15 @@
           Have a project in mind? Let's talk.
         </p>
 
-        <a href="#projects">View my work</a>
+        <a href="#projects" class="project-button">View my work</a>
       </section>
-      <hr />
 
       <section id="projects">
-        <h2>Projects</h2>
+        <h2 class="header-title">Projects</h2>
         <p>My Current and Upcoming Projects</p>
         <div class="projects-grid">
-          <article>
-            <img
-              src="./images/placeholder.png"
-              alt="A placeholder image"
-              width="400"
-              height="246"
-            />
+          <article class="project-info">
+            <img src="./images/placeholder.png" alt="A placeholder image" />
             <h3>Personal Portfolio</h3>
             <p>A webpage to showcase projects</p>
             <ul>
@@ -64,13 +59,8 @@
             >
           </article>
 
-          <article>
-            <img
-              src="./images/placeholder.png"
-              alt="A placeholder image"
-              width="400"
-              height="246"
-            />
+          <article class="project-info">
+            <img src="./images/placeholder.png" alt="A placeholder image" />
             <h3>Weather App</h3>
             <p>Look up a place and instantly see the Weather</p>
             <ul>
@@ -78,13 +68,8 @@
             </ul>
           </article>
 
-          <article>
-            <img
-              src="./images/placeholder.png"
-              alt="A placeholder image"
-              width="400"
-              height="246"
-            />
+          <article class="project-info">
+            <img src="./images/placeholder.png" alt="A placeholder image" />
             <h3>Coming soon..</h3>
             <p>A full-stack inventory and order manager for small shops.</p>
             <ul>
@@ -93,11 +78,10 @@
           </article>
         </div>
       </section>
-      <hr />
       <section id="contact">
-        <h2>Contact</h2>
+        <h2 class="header-title">Contact</h2>
         <p>If you have inquiries</p>
-        <ul>
+        <ul class="contact-links">
           <li><a href="mailto:justinejamesignacio@gmail.com">Send Email</a></li>
           <li>
             <a
@@ -110,7 +94,6 @@
         </ul>
       </section>
     </main>
-    <hr />
-    <footer>© 2026 Justine Ignacio</footer>
+    <footer><p>© 2026 Justine Ignacio</p></footer>
   </body>
 </html>
