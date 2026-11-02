@@ -3,6 +3,7 @@
   --text: #e2e8f0;
   --accent: #38bdf8;
   --accent-hover: lightblue;
+  --surface: #1e293b;
 }
 
 *,
@@ -12,7 +13,6 @@
 }
 
 body {
-  margin: 69px;
   background-color: var(--bg);
   font-family:
     system-ui,
@@ -26,6 +26,7 @@ body {
 
   max-width: 1000px;
   margin-inline: auto;
+  padding-inline: 1rem;
 }
 
 h1,
@@ -33,6 +34,11 @@ h2,
 h3 {
   font-weight: 700;
   color: #ffffff;
+}
+
+h1 {
+  font-size: 70px;
+  margin-bottom: 0;
 }
 
 p,
@@ -43,18 +49,15 @@ li {
 }
 
 nav a {
-  padding: 5px;
+  padding: 2px;
   border-radius: 7px;
+  display: block;
 }
 
 a {
-  font-size: 15px;
+  font-size: 1rem;
   color: var(--accent);
   text-decoration: none;
-}
-
-a:hover {
-  color: lightblue;
 }
 
 a:focus-visible {
@@ -71,13 +74,93 @@ img {
   width: 100%;
   border-radius: 20px;
   object-fit: cover;
+  aspect-ratio: 400/246;
 }
 
 .projects-grid {
   border-radius: 10px;
-  padding: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 .project-info {
   margin-bottom: 10px;
+}
+
+.project-button {
+  background-color: var(--accent);
+  border-radius: 6px;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 7px;
+}
+
+.project-button:hover {
+  background-color: var(--accent-hover);
+}
+
+.project-button:focus-visible,
+.project-button:focus-visible a {
+  color: black;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  flex: 1;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.nav-list li:hover,
+.nav-list li:hover a {
+  color: black;
+  background-color: var(--accent-hover);
+}
+
+.tech-tags,
+.contact-links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.tech-tags li {
+  padding: 5px;
+  background-color: var(--surface);
+  border-radius: 15px;
+  font-size: 0.75rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact-links li {
+  flex-basis: 15%;
+  background-color: black;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact-links li a {
+  display: block;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.contact-links li:hover a {
+  background-color: var(--accent-hover);
+  color: black;
 }
